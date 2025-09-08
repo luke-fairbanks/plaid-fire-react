@@ -19,7 +19,7 @@ export default function App() {
         // Initialize user account with default budget and categories
         try {
           const token = await user.getIdToken();
-          const response = await fetch('http://localhost:3001/initialize-account', {
+          const response = await fetch(`${import.meta.env.VITE_API_BASE_URL || 'http://localhost:3005'}/initialize-account`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',

@@ -20,7 +20,7 @@ This is a simple Express server that handles Plaid API integration for the budge
    PLAID_CLIENT_ID=your_client_id
    PLAID_SECRET=your_secret
    PLAID_ENV=sandbox  # or production
-   PORT=3001
+   PORT=3005
    ```
 
 4. **Start the server:**
@@ -30,7 +30,7 @@ This is a simple Express server that handles Plaid API integration for the budge
    npm run dev
    ```
 
-The server will run on `http://localhost:3001`
+The server will run on `http://localhost:3005`
 
 ## API Endpoints
 

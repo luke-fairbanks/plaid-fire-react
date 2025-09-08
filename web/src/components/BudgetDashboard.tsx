@@ -4,7 +4,7 @@ import { Budget, Category, CategorizedTransaction } from '../types/budget';
 import { LinkBank } from './LinkBank';
 import { SyncButton } from './SyncButton';
 
-const API_BASE = 'http://localhost:3001';
+const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3005';
 
 async function apiCall(endpoint: string, options?: RequestInit) {
   const auth = getAuth();

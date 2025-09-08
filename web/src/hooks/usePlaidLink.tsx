@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { usePlaidLink } from "react-plaid-link";
 import { getAuth } from "firebase/auth";
 
-const API_BASE = 'http://localhost:3001';
+const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3005';
 
 async function apiCall(endpoint: string, data?: any) {
   const auth = getAuth();
