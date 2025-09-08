@@ -69,3 +69,5 @@ node_modules/
 .dataconnect
 
 firebase-key.json
+
+dist/
